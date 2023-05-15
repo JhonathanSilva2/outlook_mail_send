@@ -10,7 +10,7 @@ def enviar_email(destinatario, assunto, mensagem):
         message = MIMEText(mensagem,'html')
         message['to'] = destinatario
         message['subject'] = assunto
-        server.sendmail('jhonathan.silva@harrispye.com', destinatario, message.as_string())
+        server.sendmail('email que seria usado para enviar email', destinatario, message.as_string())
         server.quit()
         print ('Email enviado com sucesso')
     except Exception as e:
